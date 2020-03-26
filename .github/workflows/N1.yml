@@ -18,7 +18,7 @@ on:
       - 'N1.config'
       - 'n1/**'
   schedule:
-    - cron: 0 19 * * *
+    - cron: 0 3 * * *
 #  watch:
 #    types: [started]
 
@@ -82,6 +82,10 @@ jobs:
         git clone https://github.com/frainzy1477/luci-app-clash.git openwrt/package/luci-app-clash
         git clone https://github.com/Leo-Jo/luci-app-koolproxyR.git openwrt/package/luci-app-koolproxyR
         git clone https://github.com/vernesong/OpenClash.git && mv OpenClash/luci-app-openclash openwrt/package/luci-app-openclash
+        git clone https://github.com/destan19/OpenAppFilter OpenAppFilter
+        mv OpenAppFilter/luci-app-oaf openwrt/package/
+        mv OpenAppFilter/oaf openwrt/package/
+        mv OpenAppFilter/open-app-filter openwrt/package/
 
     - name: Update Feeds
       run: |
