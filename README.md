@@ -2,10 +2,11 @@
 # 云编译N1 Openwrt固件 Docker
 注：本仓库纯属个人根据自己的设备配置使用，未有在任何论坛或者群组发布固件  
 使用lean’s lede源代码  
-主要集成插件✈️ passwall clash openclash koolproxyrPlus+ smartdns AdGuardHome...  
-🖥️默认ip已更换为192.168.2.1  
+主要集成插件✈️ passwall openclash koolproxyrPlus+ smartdns AdGuardHome...  
+🖥️默认ip为192.168.1.1
+root@password
 添加N1作为旁路由的防🔥墙规则  iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE  
-📅固件每天凌晨3时自动编译并上传dockerhub仓库  bobotoy/openwrt-aarch64:latest  
+📅固件每天凌晨3时自动编译并上传dockerhub仓库  repobor/openwrt-aarch64:latest  
 20200321  
 ----解决kpr无法启动的问题，虽然我不用，但不能没有  
 20200324  
@@ -17,12 +18,12 @@
 
 # 食用方法🥢
 举例:  
-----①.将docker-img-openwrt-aarch64-0317.gz文件上传至N1的/root目录   
+----①.将docker-img-openwrt-aarch64-0401.gz文件上传至N1的/root目录   
 ----②.导入软路由docker包：  
-----gzip -dc docker-img-openwrt-aarch64-0317.gz | docker load  
-----或者docker pull bobotoy/openwrt-aarch64:latest（推荐跳过②①直接拉取使用）  
+----gzip -dc docker-img-openwrt-aarch64-0401.gz | docker load  
+----或者docker pull repobor/openwrt-aarch64:latest（推荐跳过②①直接拉取使用）  
 ----③运行容器：  
-----docker run  -d --restart always --network macnet --ip 192.168.2.1  --privileged bobotoy/openwrt-aarch64:latest /sbin/init  
+----docker run  -d --restart always --network macnet --ip 192.168.1.1  --privileged repobor/openwrt-aarch64:latest /sbin/init  
 
 
 # 鸣谢 📢
