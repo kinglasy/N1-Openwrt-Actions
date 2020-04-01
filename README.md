@@ -9,7 +9,7 @@ root@password
 📅固件每天凌晨3时自动编译并上传dockerhub仓库  repobor/openwrt-aarch64:latest  
 20200401  
 ----已经手动编译到Docker  
-----docker pull repobor/openwrt-aarch64:0401
+----docker pull repobor/openwrt-aarch64:0401  
 20200321  
 ----解决kpr无法启动的问题，虽然我不用，但不能没有  
 20200324  
