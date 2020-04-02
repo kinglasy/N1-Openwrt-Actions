@@ -28,8 +28,8 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: N1.config
   DIY_SH: diy.sh
-  FREE_UP_DISK: true
-  SSH_ACTIONS: false
+  FREE_UP_DISK: false
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   TZ: Asia/Shanghai
