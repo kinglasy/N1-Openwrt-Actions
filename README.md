@@ -6,7 +6,7 @@
 🖥️默认ip为192.168.1.1
 root@password  
 添加N1作为旁路由的防🔥墙规则  iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE  
-📅固件每天凌晨3时自动编译并上传dockerhub仓库  repobor/openwrt-aarch64:latest  
+📅固件每天下午一点自动编译并在下午四点左右完成上传dockerhub仓库  repobor/openwrt-aarch64:latest  
 20200401  
 ----已经手动编译到Docker  
 ----docker pull repobor/openwrt-aarch64:0401  
