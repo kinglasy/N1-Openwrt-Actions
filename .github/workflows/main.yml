@@ -19,7 +19,7 @@ on:
       - 'n1/**'
       - '.github/workflows/N1.yml'
   schedule:
-    - cron: 17 14 * * *
+    - cron: 0 5 * * *
 #  watch:
 #    types: [started]
 
