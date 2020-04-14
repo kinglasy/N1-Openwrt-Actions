@@ -17,9 +17,9 @@ on:
     paths:
       - 'N1.config'
       - 'n1/**'
-      - '.github/workflows/N1.yml'
+      - '.github/workflows/main.yml'
   schedule:
-    - cron: 05 17 * * *
+    - cron: 09 17 * * *
 #  watch:
 #    types: [started]
 
