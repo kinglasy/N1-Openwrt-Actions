@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 #=================================================
 # Description: DIY script
@@ -16,3 +17,20 @@ echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/c
 sed -i 's/,arm/,aarch64/' package/luci-app-koolproxyR/Makefile
 #修改版本号
 sed -i 's/OpenWrt/Bobotoy AutoBuild $(date "+%Y.%m.%d") @ OpenWrt/g' package/lean/default-settings/files/zzz-default-settings
+=======
+#!/bin/bash
+#=================================================
+# Description: DIY script
+# Lisence: MIT
+# Author: P3TERX
+# Blog: https://p3terx.com
+#=================================================
+# Modify default IP
+#sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+# firewall custom
+echo "iptables -t nat -I POSTROUTING -o eth0 -j MASQUERADE" >> package/network/config/firewall/files/firewall.user
+# Debug kpr adapt aarch64
+#sed -i 's/,arm/,aarch64/' package/luci-app-koolproxyR/Makefile
+#修改版本号
+#sed -i 's/OpenWrt/Bobotoy AutoBuild $(date "+%Y.%m.%d") @ OpenWrt/g' package/lean/default-settings/files/zzz-default-settings
+>>>>>>> de698e9f3d4249063ecbccb590525e68e5c695c8
