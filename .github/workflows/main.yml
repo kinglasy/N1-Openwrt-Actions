@@ -18,8 +18,8 @@ on:
       - 'N1.config'
       - 'n1/**'
       - '.github/workflows/main.yml'
-  schedule:
-    - cron: 09 17 * * *
+#  schedule:
+#    - cron: 09 17 * * *
 #  watch:
 #    types: [started]
 
