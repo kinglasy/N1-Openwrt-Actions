@@ -20,7 +20,7 @@ on:
       - '.github/workflows/main.yml'
 #  schedule:
 #    - cron: 09 17 * * *
-#  watch:
+  watch:
 #    types: [started]
 
 env:
